@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
 
 void blur(int *image, int *local_image, int width, int height) {
     // Apply the blur effect using a simple 3x3 kernel
-    #pragma omp parallel for
+    #pragma omp parallel for collapse(2)
     for (int y = 1; y < height - 1; y++) {
         for (int x = 1; x < width - 1; x++) {
             int sum = 0;
