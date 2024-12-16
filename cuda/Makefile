@@ -2,7 +2,7 @@ NVCC = nvcc
 
 CFLAGS = -O2 -arch=sm_52
 
-SRC = blur_cuda.c  # Use .c extension
+SRC = blur_cuda.c
 
 EXE = blur_cuda
 
